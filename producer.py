@@ -60,7 +60,7 @@ def send_purchase_data():
             producer.produce('purchases', value=avro_data)
             producer.flush()
         print("Sent 100 purchase messages.")
-        time.sleep(1)  # Задержка 2 секунд
+        time.sleep(2)  # Задержка 2 секунд
 
 # Отправляем данные
 send_product_data()
